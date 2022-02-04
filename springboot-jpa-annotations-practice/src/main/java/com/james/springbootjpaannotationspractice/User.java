@@ -5,8 +5,13 @@ import org.slf4j.LoggerFactory;
 
 import javax.persistence.*;
 
+@EntityListeners(AuditTrailListener.class)
 @Entity
 public class User {
+
+      public String getUserName() {
+            return userName;
+      }
 
       private static Logger logger = LoggerFactory.getLogger(User.class);
 
