@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 @Repository
-@Scope(value= ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Scope(value= ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class PersonDAO {
 
       @Autowired
