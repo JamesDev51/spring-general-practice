@@ -1,0 +1,4 @@
+[2022-01-03 15:03:42:8728][http-nio-8080-exec-2] WARN  c.j.s.config.BindingAdvice - com.jamesdev.springbootaoppractice.web.UserController.save() => 필드 : username, 메시지 : 유저네임을 입력하세요.
+[2022-01-03 15:33:59:19176][http-nio-8080-exec-2] WARN  c.j.s.config.BindingAdvice - com.jamesdev.springbootaoppractice.web.UserController.save() => 필드 : username, 메시지 : 유저네임을 입력하세요.
+[2022-01-03 15:38:56:6667][http-nio-8080-exec-1] WARN  c.j.s.config.BindingAdvice - com.jamesdev.springbootaoppractice.web.UserController.save() => 필드 : username, 메시지 : 유저네임을 입력하세요.
+[2022-01-03 15:41:11:141659][http-nio-8080-exec-7] WARN  c.j.s.config.BindingAdvice - com.jamesdev.springbootaoppractice.web.UserController.update() => 필드 : password, 메시지 : password가 입력되지 않았습니다.

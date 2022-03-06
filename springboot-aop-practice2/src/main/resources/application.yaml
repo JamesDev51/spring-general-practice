@@ -1,0 +1,11 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+    liveload:
+      enabled: true
+sentry:
+  dsn: https://116798281abb41468f80fff0a70d481c@o1104651.ingest.sentry.io/6131943
+  # Set traces-sample-rate to 1.0 to capture 100% of transactions for performance monitoring.
+  # We recommend adjusting this value in production.
+  traces-sample-rate: 1.0

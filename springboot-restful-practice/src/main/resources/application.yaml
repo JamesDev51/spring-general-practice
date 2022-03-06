@@ -1,0 +1,22 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+  messages:
+    basename: messages
+  jackson:
+    serialization:
+      write-dates_as-timestamps: false
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+#logging:
+#   level:
+#    org.springframework : debug
+
+
