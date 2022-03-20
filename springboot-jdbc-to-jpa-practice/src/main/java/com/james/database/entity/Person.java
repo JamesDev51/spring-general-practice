@@ -57,6 +57,13 @@ public class Person {
             this.birthDate = birthDate;
       }
 
+      public Person(int id, String name, String location, Date birthDate) {
+            this.id = id;
+            this.name = name;
+            this.location = location;
+            this.birthDate = birthDate;
+      }
+
       @Override
       public String toString() {
             return "\nPerson{" +

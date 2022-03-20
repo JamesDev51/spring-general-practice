@@ -1,6 +1,5 @@
 package com.james.database;
 
-import com.james.database.entity.Person;
 import com.james.database.jdbc.PersonJdbcDAO;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,10 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import java.util.Date;
-
-@SpringBootApplication
-public class SpringbootJdbcToJpaPracticeApplication implements CommandLineRunner {
+//@SpringBootApplication
+public class SpringbootJdbcPracticeApplication implements CommandLineRunner {
 
       private Logger logger = LoggerFactory.getLogger(this.getClass());
 
@@ -20,7 +17,7 @@ public class SpringbootJdbcToJpaPracticeApplication implements CommandLineRunner
       PersonJdbcDAO dao;
 
       public static void main(String[] args) {
-            SpringApplication.run(SpringbootJdbcToJpaPracticeApplication.class, args);
+            SpringApplication.run(SpringbootJdbcPracticeApplication.class, args);
       }
 
       @Override

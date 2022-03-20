@@ -12,7 +12,7 @@ import java.sql.SQLException;
 import java.sql.Timestamp;
 import java.util.List;
 
-@Repository
+//@Repository
 public class PersonJdbcDAO {
 
       @Autowired
