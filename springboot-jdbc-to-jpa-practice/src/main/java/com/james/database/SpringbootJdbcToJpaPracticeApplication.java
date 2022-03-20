@@ -29,9 +29,9 @@ public class SpringbootJdbcToJpaPracticeApplication implements CommandLineRunner
             logger.info("User id 10001 -> {}",dao.findById(10001));
             logger.info("Deleting User id 10002 -> No of Rows Deleted - {}",dao.deleteById(10002));
 
-            logger.info("Inserting 10004 - {}",dao.insert(new Person(10004, "John","Berlin",new Date())));
-
-            logger.info("Updating 10003 - {}",dao.update(new Person(10003, "Tara", "NewYork",new Date())));
+//            logger.info("Inserting 10004 - {}",dao.insert(new Person(10004, "John","Berlin",new Date())));
+//
+//            logger.info("Updating 10003 - {}",dao.update(new Person(10003, "Tara", "NewYork",new Date())));
 
       }
 

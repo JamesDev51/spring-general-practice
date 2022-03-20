@@ -1,9 +1,17 @@
 package com.james.database.entity;
 
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
+//@Table(name="person")
 public class Person {
+
+      @Id
+      @GeneratedValue
       private int id;
+
+      @Column(name="name")
       private String name;
       private String location;
       private Date birthDate;
@@ -43,8 +51,7 @@ public class Person {
       public Person() {
       }
 
-      public Person(int id, String name, String location, Date birthDate) {
-            this.id = id;
+      public Person(String name, String location, Date birthDate) {
             this.name = name;
             this.location = location;
             this.birthDate = birthDate;
