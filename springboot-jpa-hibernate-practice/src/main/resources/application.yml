@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  h2:
+    ddl-auto: create-drop
+    console:
+      enabled: true
+
+  jpa:
+    defer-datasource-initialization: true
+    show-sql: true #show all queries
+    properties:
+      hibernate:
+        format_sql : true #show all queries
+        generate_statistics: true #turn statistics on
+logging:
+  level:
+    org:
+      hibernate:
+        stat: debug #turn statistics on
+        type: trace #show all queries
