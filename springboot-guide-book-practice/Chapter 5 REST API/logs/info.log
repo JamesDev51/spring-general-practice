@@ -1,0 +1,79 @@
+[2022-10-23 13:31:31.414] [INFO ] [restartedMain] com.jameswithcode.restapi.RestApiApplication Starting RestApiApplication using Java 11.0.12 on DESKTOP-RKCHR1L with PID 22624 (C:\workspace\JamesCoding\springboot\spring-general-practice\springboot-guide-book-practice\Chapter 5 REST API\target\classes started by 정민석 in C:\workspace\JamesCoding\springboot\spring-general-practice\springboot-guide-book-practice\Chapter 5 REST API)
+[2022-10-23 13:31:31.416] [INFO ] [restartedMain] com.jameswithcode.restapi.RestApiApplication No active profile set, falling back to 1 default profile: "default"
+[2022-10-23 13:31:31.450] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-10-23 13:31:31.452] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-10-23 13:31:32.163] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-10-23 13:31:32.177] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[2022-10-23 13:31:32.661] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2022-10-23 13:31:32.669] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2022-10-23 13:31:32.669] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-10-23 13:31:32.669] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-10-23 13:31:32.761] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2022-10-23 13:31:32.761] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1309 ms
+[2022-10-23 13:31:32.781] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2022-10-23 13:31:32.868] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2022-10-23 13:31:32.877] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:df55e94a-3ad8-42e4-b2da-f1bbd9a540b0'
+[2022-10-23 13:31:32.983] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-10-23 13:31:33.020] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-10-23 13:31:33.130] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-10-23 13:31:33.216] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-10-23 13:31:33.347] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-10-23 13:31:33.354] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-10-23 13:31:33.516] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-10-23 13:31:33.613] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-10-23 13:31:33.727] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2022-10-23 13:31:33.837] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2022-10-23 13:31:33.852] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2022-10-23 13:31:33.853] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2022-10-23 13:31:33.866] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2022-10-23 13:31:33.890] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2022-10-23 13:31:34.006] [INFO ] [restartedMain] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: postMemberUsingPOST_1
+[2022-10-23 13:31:34.028] [INFO ] [restartedMain] com.jameswithcode.restapi.RestApiApplication Started RestApiApplication in 3.029 seconds (JVM running for 5.065)
+[2022-10-23 13:32:38.472] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-10-23 13:32:38.473] [INFO ] [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-10-23 13:32:38.693] [WARN ] [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2022-10-23 13:32:38.693] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2022-10-23 13:32:38.698] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
+[2022-10-23 13:34:21.099] [INFO ] [restartedMain] com.jameswithcode.restapi.RestApiApplication Starting RestApiApplication using Java 11.0.12 on DESKTOP-RKCHR1L with PID 21340 (C:\workspace\JamesCoding\springboot\spring-general-practice\springboot-guide-book-practice\Chapter 5 REST API\target\classes started by 정민석 in C:\workspace\JamesCoding\springboot\spring-general-practice\springboot-guide-book-practice\Chapter 5 REST API)
+[2022-10-23 13:34:21.101] [INFO ] [restartedMain] com.jameswithcode.restapi.RestApiApplication No active profile set, falling back to 1 default profile: "default"
+[2022-10-23 13:34:21.138] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2022-10-23 13:34:21.138] [INFO ] [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2022-10-23 13:34:21.863] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2022-10-23 13:34:21.876] [INFO ] [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+[2022-10-23 13:34:22.332] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8080 (http)
+[2022-10-23 13:34:22.339] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8080"]
+[2022-10-23 13:34:22.339] [INFO ] [restartedMain] org.apache.catalina.core.StandardService Starting service [Tomcat]
+[2022-10-23 13:34:22.339] [INFO ] [restartedMain] org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.65]
+[2022-10-23 13:34:22.430] [INFO ] [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+[2022-10-23 13:34:22.430] [INFO ] [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1292 ms
+[2022-10-23 13:34:22.450] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Starting...
+[2022-10-23 13:34:22.532] [INFO ] [restartedMain] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Start completed.
+[2022-10-23 13:34:22.542] [INFO ] [restartedMain] org.springframework.boot.autoconfigure.h2.H2ConsoleAutoConfiguration H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:35f5ebb8-423f-4fc4-bcec-6a7e75cc9bf5'
+[2022-10-23 13:34:22.663] [INFO ] [restartedMain] org.hibernate.jpa.internal.util.LogHelper HHH000204: Processing PersistenceUnitInfo [name: default]
+[2022-10-23 13:34:22.698] [INFO ] [restartedMain] org.hibernate.Version HHH000412: Hibernate ORM core version 5.6.11.Final
+[2022-10-23 13:34:22.807] [INFO ] [restartedMain] org.hibernate.annotations.common.Version HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2022-10-23 13:34:22.892] [INFO ] [restartedMain] org.hibernate.dialect.Dialect HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+[2022-10-23 13:34:23.024] [INFO ] [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2022-10-23 13:34:23.031] [INFO ] [restartedMain] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2022-10-23 13:34:23.184] [WARN ] [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2022-10-23 13:34:23.275] [INFO ] [restartedMain] springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+[2022-10-23 13:34:23.381] [INFO ] [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer LiveReload server is running on port 35729
+[2022-10-23 13:34:23.483] [INFO ] [restartedMain] org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8080"]
+[2022-10-23 13:34:23.499] [INFO ] [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8080 (http) with context path ''
+[2022-10-23 13:34:23.500] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Context refreshed
+[2022-10-23 13:34:23.514] [INFO ] [restartedMain] springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Found 1 custom documentation plugin(s)
+[2022-10-23 13:34:23.536] [INFO ] [restartedMain] springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Scanning for api listing references
+[2022-10-23 13:34:23.641] [INFO ] [restartedMain] springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Generating unique operation named: postMemberUsingPOST_1
+[2022-10-23 13:34:23.663] [INFO ] [restartedMain] com.jameswithcode.restapi.RestApiApplication Started RestApiApplication in 3.001 seconds (JVM running for 5.059)
+[2022-10-23 13:34:32.178] [INFO ] [http-nio-8080-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2022-10-23 13:34:32.180] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Initializing Servlet 'dispatcherServlet'
+[2022-10-23 13:34:32.181] [INFO ] [http-nio-8080-exec-1] org.springframework.web.servlet.DispatcherServlet Completed initialization in 1 ms
+[2022-10-23 13:34:38.450] [INFO ] [http-nio-8080-exec-10] com.jameswithcode.restapi.controller.GetController getHello 호출
+[2022-10-23 13:35:01.276] [INFO ] [http-nio-8080-exec-3] com.jameswithcode.restapi.controller.GetController getName 호출
+[2022-10-23 13:35:03.371] [INFO ] [http-nio-8080-exec-8] com.jameswithcode.restapi.controller.GetController getName 호출
+[2022-10-23 13:35:10.378] [INFO ] [http-nio-8080-exec-1] com.jameswithcode.restapi.controller.GetController getVariable 호출: asd
+[2022-10-23 14:20:22.018] [INFO ] [SpringApplicationShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Closing JPA EntityManagerFactory for persistence unit 'default'
+[2022-10-23 14:20:22.019] [INFO ] [SpringApplicationShutdownHook] org.hibernate.tool.schema.internal.SchemaDropperImpl$DelayedDropActionImpl HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+[2022-10-23 14:20:22.231] [WARN ] [SpringApplicationShutdownHook] org.springframework.beans.factory.support.DisposableBeanAdapter Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+[2022-10-23 14:20:22.231] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown initiated...
+[2022-10-23 14:20:22.239] [INFO ] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource HikariPool-1 - Shutdown completed.
