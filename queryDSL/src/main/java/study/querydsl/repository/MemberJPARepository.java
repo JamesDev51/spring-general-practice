@@ -7,27 +7,21 @@ import static study.querydsl.entity.QTeam.*;
 import java.util.List;
 import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import org.springframework.util.StringUtils;
 
 import com.querydsl.core.BooleanBuilder;
-import com.querydsl.core.types.Predicate;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
 import jakarta.persistence.EntityManager;
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
 import study.querydsl.dto.MemberSearchCondition;
 import study.querydsl.dto.MemberTeamDto;
 import study.querydsl.dto.QMemberTeamDto;
 import study.querydsl.entity.Member;
-import study.querydsl.entity.QMember;
 
 @Repository
 // @RequiredArgsConstructor
-public class MemberJpaRepository {
+public class MemberJPARepository {
 
 	private final EntityManager em;
 	private final JPAQueryFactory queryFactory;
@@ -38,7 +32,7 @@ public class MemberJpaRepository {
 	// 	this.queryFactory = jpaQueryFactory;
 	// }
 
-	public MemberJpaRepository(EntityManager em) {
+	public MemberJPARepository(EntityManager em) {
 		this.em = em;
 		this.queryFactory = new JPAQueryFactory(em);
 	}
