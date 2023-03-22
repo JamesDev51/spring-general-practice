@@ -10,6 +10,4 @@ import study.querydsl.entity.Member;
 public interface MemberRepository extends JpaRepository<Member,Long>, MemberRepositoryCustom, QuerydslPredicateExecutor<Member> {
 
 	List<Member> findByUsername(String username);
-
-
 }

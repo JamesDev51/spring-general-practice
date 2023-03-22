@@ -21,6 +21,7 @@ import com.querydsl.core.types.Projections;
 import com.querydsl.core.types.dsl.BooleanExpression;
 import com.querydsl.core.types.dsl.CaseBuilder;
 import com.querydsl.core.types.dsl.Expressions;
+import com.querydsl.core.types.dsl.NumberExpression;
 import com.querydsl.jpa.JPAExpressions;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 
@@ -356,7 +357,8 @@ public class QuerydslBasicTest {
 		List<Member> result = queryFactory
 			.selectFrom(member)
 			.where(member.age.eq(
-				select(memberSub.age.max())
+				JPAExpressions
+					.select(memberSub.age.max())
 					.from(memberSub)
 			))
 			.fetch();
@@ -413,10 +415,10 @@ public class QuerydslBasicTest {
 
 		QMember memberSub = new QMember("memberSub");
 
-		queryFactory
+		List<Tuple> fetch = queryFactory
 			.select(
 				member.username,
-					select(memberSub.age.avg())
+				select(memberSub.age.avg())
 					.from(memberSub)
 			).from(member)
 			.fetch();
@@ -452,6 +454,31 @@ public void complexCase() throws Exception{
 		System.out.println("s=" + s);
 	}
 }
+
+	/**
+	 * 1. 0 ~ 30살이 아닌 회원을 가장 먼저 출력
+	 * 2. 0 ~ 20살 회원 출력
+	 * 3. 21 ~ 30살 회원 출력
+	 * @throws Exception
+	 */
+	@Test
+public void complexOrderBy() throws Exception{
+
+		NumberExpression<Integer> rankPath = new CaseBuilder()
+			.when(member.age.between(0, 20)).then(2)
+			.when(member.age.between(21, 30)).then(1)
+			.otherwise(3);
+
+		List<Tuple> result = queryFactory
+			.select(member.username, member.age, rankPath)
+			.from(member)
+			.orderBy(rankPath.desc())
+			.fetch();
+
+
+
+	}
+
 
 @Test
 public void constant() throws Exception{
@@ -710,8 +737,6 @@ public void simpleProjection() throws Exception{
 			.update(member)
 			.set(member.age, member.age.add(1))
 			.execute();
-
-
 	}
 
 	@Test
@@ -738,15 +763,18 @@ public void simpleProjection() throws Exception{
 
 	@Test
 	public void sqlFunction2() throws Exception{
-		List<String> result = queryFactory
+
+
+
+		List<String> result2 = queryFactory
 			.select(member.username)
 			.from(member)
 			// .where(member.username.eq(
-			// 	Expressions.stringTemplate("function('lower',{0}", member.username))) //db의 dialect로 지원하는 lower
+			// 	Expressions.stringTemplate("function('lower',{0}", member.username)))
 			.where(member.username.eq(member.username.lower())) //JPQL에서 제공하는 lower (ansi 표준은 대부분 내장)
 			.fetch();
 
-		for (String s : result) {
+		for (String s : result2) {
 			System.out.println("s = " + s);
 		}
 	}

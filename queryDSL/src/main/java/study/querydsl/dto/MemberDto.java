@@ -14,6 +14,7 @@ public class MemberDto {
 
 	@QueryProjection
 	public MemberDto(String username, int age) {
+		System.out.println("생성자 호출됨");
 		this.username = username;
 		this.age = age;
 	}
